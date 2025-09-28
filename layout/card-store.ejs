@@ -1,0 +1,12 @@
+<a href="store.html" class="rounded-[8px] bg-primary-1 hover:shadow-[0_0_20px_rgba(236,109,39,0.6),0_0_40px_rgba(125,125,125,0.3)]">
+  <div class="rounded-[8px] max-w-[416px] bg-linear-to-b from-neutral-300 to-neutral-400 hover:from-neutral-300/30 hover:to-neutral-400/30 border border-white/10">
+    <img src="<%= url %>" alt="store" />
+    <div class="p-4">
+      <h2 class="mb-4 flex justify-between text-h4 text-white"><%= title %><span class="text-h6 bg-primary-2 rounded-[100px] px-2 py-1"><%= category %></span></h2>
+      <p class="flex mb-2"><img src="/assets/images/star.svg" alt="star" class="mr-2" /><span class="text-secodary-2 mr-2"><%= rate %></span><span><%= rateNumber %></span></p>
+      <p class="flex">
+        <span><img src="/assets/images/deliveryPrice.svg" alt="deliveryPrice" class="mr-2" /></span><span class="mr-4"><%= deliveryPrice %></span><span><img src="/assets/images/deliveryTime.svg" alt="deliveryTime" class="mr-2" /></span><span><%= deliveryTime %></span>
+      </p>
+    </div>
+  </div>
+</a>

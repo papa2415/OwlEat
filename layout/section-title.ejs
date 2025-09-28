@@ -1,0 +1,12 @@
+<div class="flex justify-between items-end mb-12">
+  <div>
+    <p class="text-primary-1 text-h5 mb-2"><%= title1 %></p>
+    <h2 class="text-white text-h1 mb-2"><%= title2 %></h2>
+<% if (locals.description) { %>
+  <p><%= locals.description %></p>
+<% } %>
+  </div>
+  <% if (locals.swiper) { %>
+  <%- include('./layout/swiper'); -%>
+  <% } %>
+</div>

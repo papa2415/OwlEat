@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="/assets/all.css" />
+  </head>
+
+  <body class="bg-bg text-neutral-100">
+    <%- include('./layout/header'); -%>
+    <main class="mx-auto max-w-[1296px]">
+      <section class="py-15">
+        <div>
+          <div class="mb-6 flex justify-end"><%- include('./layout/swiper'); -%></div>
+          <div class="flex gap-6 mb-15"><%- include('./layout/banner',{title1:"不知道吃什麼？",title2:"讓 OwlEat 幫你算看看",subTitle:"前往占卜",url:"/assets/images/banner/banner-1.png"}); -%> <%- include('./layout/banner',{title1:"本月優惠折扣碼",title2:"新用戶最低享 6 折優惠",subTitle:"立即領取",url:"/assets/images/banner/banner-2.png"}); -%> <%- include('./layout/banner',{title1:"職人炭火串燒亭",title2:"點餐享 9 折優惠",subTitle:"立即領取",url:"/assets/images/banner/banner-3.png"}); -%> <%- include('./layout/banner',{title1:"邀請好友使用",title2:"立即享有 $100 優惠",subTitle:"查看更多",url:"/assets/images/banner/banner-4.png"}); -%></div>
+        </div>
+        <div class="flex gap-6 mb-15"><%- include('./layout/card-category',{title:"炸物",url:"/assets/images/category/category-1.png"}); -%> <%- include('./layout/card-category',{title:"串燒",url:"/assets/images/category/category-2.png"}); -%> <%- include('./layout/card-category',{title:"飲料",url:"/assets/images/category/category-3.png"}); -%> <%- include('./layout/card-category',{title:"滷味",url:"/assets/images/category/category-4.png"}); -%> <%- include('./layout/card-category',{title:"夜市小吃",url:"/assets/images/category/category-5.png"}); -%> <%- include('./layout/card-category',{title:"火鍋",url:"/assets/images/category/category-6.png"}); -%><%- include('./layout/card-category',{title:"異國料理",url:"/assets/images/category/category-7.png"}); -%><%- include('./layout/card-category',{title:"清粥小菜",url:"/assets/images/category/category-8.png"}); -%></div>
+        <div class="flex gap-6 shrink-0"><%- include('./layout/filter',{title:"外送費",items:"3",items1:"外送費：低於20元",items2:"外送費：低於40元",items3:"外送費：任意金額"}); -%><%- include('./layout/filter',{title:"外送距離",items:"3",items1:"外送距離：0~2公里",items2:"外送距離：0~4公里",items3:"外送距離：0~10公里"}); -%><%- include('./layout/filter',{title:"外送時間",items:"3",items1:"外送時間：不到30分鐘",items2:"外送時間：不到45分鐘",items3:"外送時間：一小時內"}); -%><%- include('./layout/filter',{title:"價格",items:"3",items1:"價格：$",items2:"價格：$$",items3:"價格：$$$"}); -%><%- include('./layout/filter',{title:"評分",items:"4",items1:"評分:3分以上",items2:"評分:3.5分以上",items3:"評分:4分以上",items4:"評分:4.5分以上"}); -%></div>
+      </section>
+      <section class="py-15">
+        <%- include('./layout/section-title',{title1:"Special Offer",title2:"超值優惠",swiper:"yes"}); -%>
+        <div class="flex gap-6"><%- include('./layout/card-store',{title:"Handam 食堂",category:"異國料理",rate:"4.6",rateNumber:"(500+)",deliveryPrice:"$30",deliveryTime:"15~25 分鐘",url:"/assets/images/store/store-1.png"}); -%> <%- include('./layout/card-store',{title:"夜肉場",category:"燒烤",rate:"4.7",rateNumber:"(500+)",deliveryPrice:"$35",deliveryTime:"15~25 分鐘",url:"/assets/images/store/store-2.png"}); -%><%- include('./layout/card-store',{title:"炸霸咧",category:"炸物",rate:"4.6",rateNumber:"(500+)",deliveryPrice:"$50",deliveryTime:"20~30 分鐘",url:"/assets/images/store/store-3.png"}); -%></div>
+      </section>
+      <section class="py-15">
+        <%- include('./layout/section-title',{title1:"Your Picks",title2:"專屬優惠",swiper:"yes"}); -%>
+        <div class="flex gap-6"><%- include('./layout/card-store',{title:"初炒石頭屋",category:"火鍋",rate:"4.7",rateNumber:"(500+)",deliveryPrice:"$30",deliveryTime:"30~40 分鐘",url:"/assets/images/store/store-4.png"}); -%> <%- include('./layout/card-store',{title:"大安豆漿",category:"早餐",rate:"4.6",rateNumber:"(500+)",deliveryPrice:"$20",deliveryTime:"15~25 分鐘",url:"/assets/images/store/store-5.png"}); -%> <%- include('./layout/card-store',{title:"霜月鰭",category:"異國料理",rate:"4.2",rateNumber:"(500+)",deliveryPrice:"$20",deliveryTime:"15~25 分鐘",url:"/assets/images/store/store-6.png"}); -%></div>
+      </section>
+      <section class="py-15">
+        <%- include('./layout/section-title',{title1:"All Restaurants",title2:"所有餐廳",swiper:"yes"}); -%>
+        <div class="flex gap-6 flex-wrap mb-12"><%- include('./layout/card-store',{title:"月光下的義麵",category:"異國料理",rate:"4.3",rateNumber:"(500+)",deliveryPrice:"$30",deliveryTime:"15~25 分鐘",url:"/assets/images/store/store-7.png"}); -%> <%- include('./layout/card-store',{title:"隱鰭料理研究所",category:"異國料理",rate:"4.3",rateNumber:"(500+)",deliveryPrice:"$30",deliveryTime:"25~35 分鐘",url:"/assets/images/store/store-8.png"}); -%> <%- include('./layout/card-store',{title:"Handam 食堂",category:"異國料理",rate:"4.6",rateNumber:"(500+)",deliveryPrice:"$30",deliveryTime:"15~25 分鐘",url:"/assets/images/store/store-1.png"}); -%> <%- include('./layout/card-store',{title:"不只是漢堡先生",category:"炸物",rate:"4.6",rateNumber:"(500+)",deliveryPrice:"$30",deliveryTime:"15~25 分鐘",url:"/assets/images/store/store-9.png"});-%> <%- include('./layout/card-store',{title:"花野森",category:"異國料理",rate:"4.6",rateNumber:"(500+)",deliveryPrice:"$30",deliveryTime:"15~25 分鐘",url:"/assets/images/store/store-10.png"}); -%> <%- include('./layout/card-store',{title:"港式滷味",category:"滷味",rate:"4.6",rateNumber:"(500+)",deliveryPrice:"$30",deliveryTime:"15~25 分鐘",url:"/assets/images/store/store-11.png"}); -%> <%- include('./layout/card-store',{title:"大滷攤",category:"滷味",rate:"4.6",rateNumber:"(500+)",deliveryPrice:"$30",deliveryTime:"15~25 分鐘",url:"/assets/images/store/store-12.png"}); -%> <%- include('./layout/card-store',{title:"阿霞牛肉湯",category:"暖胃熱湯",rate:"4.6",rateNumber:"(500+)",deliveryPrice:"$30",deliveryTime:"15~25 分鐘",url:"/assets/images/store/store-13.png"}); -%><%- include('./layout/card-store',{title:"炸霸咧",category:"炸物",rate:"4.6",rateNumber:"(500+)",deliveryPrice:"$50",deliveryTime:"20~30 分鐘",url:"/assets/images/store/store-3.png"}); -%></div>
+        <div class="text-center"><a href="#" class="text-white py-3 px-12 border border-white/40 rounded-[100px] bg-neutral-400">查看更多</a></div>
+      </section>
+    </main>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
