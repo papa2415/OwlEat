@@ -13,27 +13,35 @@
     <img src="/assets/images/section--banner.png" alt="section--banner" class="mx-auto" />
     <main class="mx-auto max-w-[1296px]">
       <section class="py-15">
-        <h1 class="text-white text-h1">夜肉場</h1>
+        <div class="flex justify-between items-center">
+          <div>
+            <h1 class="text-white text-h1 mb-4">夜肉場</h1>
+            <p class="flex mb-4 items-center"><span class="text-h6 bg-primary-2 rounded-[100px] px-2 py-1 text-white mr-2">指定餐點 9 折</span><img src="/assets/images/star.svg" alt="star" class="mr-2" /><span class="text-secodary-2 mr-2">4.5</span><span>(500+)</span></p>
+            <p class="mb-4"><span class="mr-2">・韓式燒肉店</span><span>・$$$</span></p>
+            <p class="flex items-center"><img src="/assets/images/schedule.svg" alt="Open" class="mr-2" /><span class="mr-2">營業中</span><span>・20:00 打烊</span></p>
+          </div>
+          <div><%- include('./layout/switch'); -%></div>
+        </div>
       </section>
-      <section class="py-15">
+      <section class="mb-12">
         <%- include('./layout/section-title',{title1:"Pop Selection",title2:"人氣精選",description:"第一次點餐，絕不能錯過這些招牌！"}); -%>
-        <div class="flex gap-6 flex-wrap mb-12"><%- include('./layout/card-food',{title:"烤梅花豬肉定食",specialPrice:"$300",originalPrice:"$340",description:"厚切炭烤梅花／醬油麴微甜／蒜香蔥鹽",url:"/assets/images/food/food-1.png"}); -%> <%- include('./layout/card-food',{title:"烤牛五花定食",specialPrice:"$380",description:"炭烤厚切牛五花／特調蔥蒜醬／辣泡菜年糕",url:"/assets/images/food/food-2.png"}); -%> <%- include('./layout/card-food',{title:"部隊鍋定食",specialPrice:"$320",description:"清爽部隊辣湯／德式香腸午餐肉／焗豆泡菜起司",url:"/assets/images/food/food-3.png"}); -%> <%- include('./layout/card-food',{title:"辣炒年糕",specialPrice:"$220",description:"彈牙年糕裹上特製辣醬／魚板與洋蔥提鮮甘甜／芝麻微香畫龍點睛",url:"/assets/images/food/food-4.png"}); -%> <%- include('./layout/card-food',{title:"西瓜蘇打",specialPrice:"$90",url:"/assets/images/food/food-5.png"}); -%><%- include('./layout/card-food',{title:"韓式拌冷麵",specialPrice:"$200",description:"冰涼蕎麥彈牙／酸甜辣醬開胃／黃瓜雞蛋爽脆",url:"/assets/images/food/food-13.png"}); -%></div>
+        <div class="flex gap-6 flex-wrap"><%- include('./layout/card-food',{title:"烤梅花豬肉定食",specialPrice:"$300",originalPrice:"$340",description:"厚切炭烤梅花／醬油麴微甜／蒜香蔥鹽",url:"/assets/images/food/food-1.png"}); -%> <%- include('./layout/card-food',{title:"烤牛五花定食",specialPrice:"$380",description:"炭烤厚切牛五花／特調蔥蒜醬／辣泡菜年糕",url:"/assets/images/food/food-2.png"}); -%> <%- include('./layout/card-food',{title:"部隊鍋定食",specialPrice:"$320",description:"清爽部隊辣湯／德式香腸午餐肉／焗豆泡菜起司",url:"/assets/images/food/food-3.png"}); -%> <%- include('./layout/card-food',{title:"辣炒年糕",specialPrice:"$220",description:"彈牙年糕裹上特製辣醬／魚板與洋蔥提鮮甘甜／芝麻微香畫龍點睛",url:"/assets/images/food/food-4.png"}); -%> <%- include('./layout/card-food',{title:"西瓜蘇打",specialPrice:"$90",url:"/assets/images/food/food-5.png"}); -%><%- include('./layout/card-food',{title:"韓式拌冷麵",specialPrice:"$200",description:"冰涼蕎麥彈牙／酸甜辣醬開胃／黃瓜雞蛋爽脆",url:"/assets/images/food/food-13.png"}); -%></div>
       </section>
-      <section class="py-15">
+      <section class="mb-12">
         <%- include('./layout/section-title',{title1:"Pop Selection",title2:"我想吃正餐",description:"肉多料足、飽足系主餐，一份就讓你吃得心滿意足！"}); -%>
-        <div class="flex gap-6 flex-wrap mb-12"><%- include('./layout/card-food',{title:"烤五花肉定食",specialPrice:"$280",description:"炭火酥脆五花／鹽麴醃香／韓式甜辣醬",url:"/assets/images/food/food-6.png"}); -%> <%- include('./layout/card-food',{title:"烤梅花豬肉定食",specialPrice:"$300",originalPrice:"$340",description:"厚切炭烤梅花／醬油麴微甜／蒜香蔥鹽",url:"/assets/images/food/food-1.png"}); -%> <%- include('./layout/card-food',{title:"烤牛板腱定食",specialPrice:"$580",description:"慢火嫩烤板腱／紅酒香草醬／黑椒洋蔥",url:"/assets/images/food/food-7.png"}); -%> <%- include('./layout/card-food',{title:"烤牛五花定食",specialPrice:"$380",description:"炭烤厚切牛五花／特調蔥蒜醬／辣泡菜年糕",url:"/assets/images/food/food-2.png"}); -%> <%- include('./layout/card-food',{title:"烤松阪豬定食",specialPrice:"$360",description:"炙烤松阪 Q 彈／柚子椒鹽香／蔥絲泡菜添味",url:"/assets/images/food/food-8.png"}); -%></div>
+        <div class="flex gap-6 flex-wrap"><%- include('./layout/card-food',{title:"烤五花肉定食",specialPrice:"$280",description:"炭火酥脆五花／鹽麴醃香／韓式甜辣醬",url:"/assets/images/food/food-6.png"}); -%> <%- include('./layout/card-food',{title:"烤梅花豬肉定食",specialPrice:"$300",originalPrice:"$340",description:"厚切炭烤梅花／醬油麴微甜／蒜香蔥鹽",url:"/assets/images/food/food-1.png"}); -%> <%- include('./layout/card-food',{title:"烤牛板腱定食",specialPrice:"$580",description:"慢火嫩烤板腱／紅酒香草醬／黑椒洋蔥",url:"/assets/images/food/food-7.png"}); -%> <%- include('./layout/card-food',{title:"烤牛五花定食",specialPrice:"$380",description:"炭烤厚切牛五花／特調蔥蒜醬／辣泡菜年糕",url:"/assets/images/food/food-2.png"}); -%> <%- include('./layout/card-food',{title:"烤松阪豬定食",specialPrice:"$360",description:"炙烤松阪 Q 彈／柚子椒鹽香／蔥絲泡菜添味",url:"/assets/images/food/food-8.png"}); -%></div>
       </section>
-      <section class="py-15">
+      <section class="mb-12">
         <%- include('./layout/section-title',{title1:"Pop Selection",title2:"我想喝熱湯",description:"暖心熱湯，濃郁湯頭直達靈魂，天冷或宵夜必備！"}); -%>
-        <div class="flex gap-6 flex-wrap mb-12"><%- include('./layout/card-food',{title:"泡菜鍋定食",specialPrice:"$280",description:"酸辣泡菜湯底／厚切豬肉嫩滑／豆腐金針菇蔬香",url:"/assets/images/food/food-9.png"}); -%> <%- include('./layout/card-food',{title:"大醬鍋定食",specialPrice:"$300",description:"醇厚大醬湯底／蛤蜊馬鈴薯鮮甘／櫛瓜豆腐豐盈",url:"/assets/images/food/food-10.png"}); -%> <%- include('./layout/card-food',{title:"部隊鍋定食",specialPrice:"$320",description:"清爽部隊辣湯／德式香腸午餐肉／焗豆泡菜起司",url:"/assets/images/food/food-3.png"}); -%></div>
+        <div class="flex gap-6 flex-wrap"><%- include('./layout/card-food',{title:"泡菜鍋定食",specialPrice:"$280",description:"酸辣泡菜湯底／厚切豬肉嫩滑／豆腐金針菇蔬香",url:"/assets/images/food/food-9.png"}); -%> <%- include('./layout/card-food',{title:"大醬鍋定食",specialPrice:"$300",description:"醇厚大醬湯底／蛤蜊馬鈴薯鮮甘／櫛瓜豆腐豐盈",url:"/assets/images/food/food-10.png"}); -%> <%- include('./layout/card-food',{title:"部隊鍋定食",specialPrice:"$320",description:"清爽部隊辣湯／德式香腸午餐肉／焗豆泡菜起司",url:"/assets/images/food/food-3.png"}); -%></div>
       </section>
-      <section class="py-15">
+      <section class="mb-12">
         <%- include('./layout/section-title',{title1:"Pop Selection",title2:"多點一些來配",description:"解膩又涮嘴的小菜配角，與主餐絕佳搭檔，一口接一口！"}); -%>
-        <div class="flex gap-6 flex-wrap mb-12"><%- include('./layout/card-food',{title:"韭菜煎餅",specialPrice:"$180",description:"金黃酥脆韭香／蛋香麵糊軟嫩／蒜醋醬油更香",url:"/assets/images/food/food-11.png"}); -%> <%- include('./layout/card-food',{title:"玉米煎餅",specialPrice:"$120",originalPrice:"$180",description:"甜脆玉米粒迸香／金黃麵糊外酥內嫩／蜂蜜美乃滋點綴",url:"/assets/images/food/food-12.png"}); -%> <%- include('./layout/card-food',{title:"辣炒年糕",specialPrice:"$220",description:"彈牙年糕裹上特製辣醬／魚板與洋蔥提鮮甘甜／芝麻微香畫龍點睛",url:"/assets/images/food/food-4.png"}); -%> <%- include('./layout/card-food',{title:"韓式拌冷麵",specialPrice:"$200",description:"冰涼蕎麥彈牙／酸甜辣醬開胃／黃瓜雞蛋爽脆",url:"/assets/images/food/food-13.png"}); -%></div>
+        <div class="flex gap-6 flex-wrap"><%- include('./layout/card-food',{title:"韭菜煎餅",specialPrice:"$180",description:"金黃酥脆韭香／蛋香麵糊軟嫩／蒜醋醬油更香",url:"/assets/images/food/food-11.png"}); -%> <%- include('./layout/card-food',{title:"玉米煎餅",specialPrice:"$120",originalPrice:"$180",description:"甜脆玉米粒迸香／金黃麵糊外酥內嫩／蜂蜜美乃滋點綴",url:"/assets/images/food/food-12.png"}); -%> <%- include('./layout/card-food',{title:"辣炒年糕",specialPrice:"$220",description:"彈牙年糕裹上特製辣醬／魚板與洋蔥提鮮甘甜／芝麻微香畫龍點睛",url:"/assets/images/food/food-4.png"}); -%> <%- include('./layout/card-food',{title:"韓式拌冷麵",specialPrice:"$200",description:"冰涼蕎麥彈牙／酸甜辣醬開胃／黃瓜雞蛋爽脆",url:"/assets/images/food/food-13.png"}); -%></div>
       </section>
-      <section class="py-15">
+      <section class="mb-12">
         <%- include('./layout/section-title',{title1:"Pop Selection",title2:"喝看看韓國飲料",description:"經典韓系果汁與氣泡飲，一開罐就秒飛首爾街頭！"}); -%>
-        <div class="flex gap-6 flex-wrap mb-12"><%- include('./layout/card-food',{title:"韓國水梨汁",specialPrice:"$80",url:"/assets/images/food/food-14.png"}); -%> <%- include('./layout/card-food',{title:"韓國葡萄汁",specialPrice:"$70",url:"/assets/images/food/food-15.png"}); -%> <%- include('./layout/card-food',{title:"西瓜蘇打",specialPrice:"$90",url:"/assets/images/food/food-5.png"}); -%><%- include('./layout/card-food',{title:"可樂",specialPrice:"$40"}); -%></div>
+        <div class="flex gap-6 flex-wrap"><%- include('./layout/card-food',{title:"韓國水梨汁",specialPrice:"$80",url:"/assets/images/food/food-14.png"}); -%> <%- include('./layout/card-food',{title:"韓國葡萄汁",specialPrice:"$70",url:"/assets/images/food/food-15.png"}); -%> <%- include('./layout/card-food',{title:"西瓜蘇打",specialPrice:"$90",url:"/assets/images/food/food-5.png"}); -%><%- include('./layout/card-food',{title:"可樂",specialPrice:"$40"}); -%></div>
       </section>
     </main>
     <%- include('./layout/footer'); -%>

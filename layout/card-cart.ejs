@@ -1,0 +1,20 @@
+ <div class="rounded-[8px] max-w-[1296px] bg-linear-to-b from-neutral-300 to-neutral-400 flex  justify-between border border-white/10 ">
+    <div class="max-w-[318px] flex">
+       <% if (locals.url) { %>
+      <img src="<%= locals.url %>" alt="store" class="rounded-e-[8px]" />
+      <% }else { %>
+      <div class="w-[576px] aspect-[576/498]"></div>
+      <% } %>
+    </div>
+    <div class="p-4 grow flex flex-col justify-center">
+      <h2 class="mb-4 flex justify-between text-h4 text-white"><%= title %></h2>
+      <p class="mb-2"><span class="mr-2 text-h5 text-white"><%= specialPrice %></span>
+          <% if (locals.originalPrice) { %>
+        <span class="line-through text-h5"><%= locals.originalPrice %></span>
+        <% } %>
+      </p>
+    </div>
+    <div class="flex items-center p-8  justify-end">
+              <%- include('./layout/addCart'); -%>
+    </div>
+  </div>

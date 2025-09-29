@@ -26,7 +26,7 @@ function moveOutputPlugin() {
 export default defineConfig({
   // base 的寫法:
   // base: '/Repository 的名稱/'
-  base: "/OwlEat",
+  base: "/OwlEat/",
   plugins: [liveReload(["./layout/**/*.ejs", "./pages/**/*.ejs", "./pages/**/*.html"]), ViteEjsPlugin(), moveOutputPlugin(), tailwindcss()],
   server: {
     // 啟動 server 時預設開啟的頁面
