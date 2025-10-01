@@ -15,6 +15,9 @@
   --text-h1: 2.5rem;
   --text-h1--line-height: 1.2;
   --text-h1--font-weight: 700;
+  --text-h2: 2rem;
+  --text-h1--line-height: 1.2;
+  --text-h1--font-weight: 700;
   --text-h4: 1.5rem;
   --text-h4--line-height: 1.2;
   --text-h4--font-weight: 700;
@@ -31,4 +34,8 @@
 }
 .dropdown-menu.show {
   display: block;
+}
+
+@utility no-scrollbar {
+  @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
 }

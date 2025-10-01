@@ -10,22 +10,50 @@
 
   <body class="bg-bg text-neutral-100">
     <%- include('./layout/header'); -%>
-    <main class="mx-auto max-w-[1296px] h-screen">
+    <main class="mx-auto max-w-[1296px] px-3">
       <section class="py-15">
-        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-        <div class="sm:col-span-4 flex items-center gap-4">
-          <label for="username" class="block text-h5 font-medium text-white">姓名</label>
-          <div>
-            <div class="rounded-md bg-white/5 pl-3 outline-1 -outline-offset-1 outline-white/10 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-500">
-              <input id="username" type="text" name="username" placeholder="姓名" value="王曉芳" class="block min-w-0 grow bg-transparent py-1.5 pr-3 pl-1 text-base text-white placeholder:text-gray-500 focus:outline-none text-h5" />
-            </div>
+        <h2 class="text-white text-h2 mb-4">訂購資訊</h2>
+        <div class="grid grid-cols-12 items-center gap-4 mb-4">
+          <label for="username" class="block text-h5 col-span-4 md:col-span-2">訂購人姓名</label>
+          <input id="username" type="text" name="username" placeholder="姓名" value="王曉芳" class="block w-full rounded-md bg-neutral-400 text-white px-3 py-2 border border-white/40 col-span-8 md:col-span-3" />
+        </div>
+        <div class="grid grid-cols-12 items-center gap-4 mb-4">
+          <label for="phone" class="block text-h5 col-span-4 md:col-span-2">聯絡電話</label>
+          <input id="phone" type="text" name="phone" placeholder="電話" value="0912345678" class="block w-full rounded-md bg-neutral-400 text-white px-3 py-2 border border-white/40 col-span-8 md:col-span-3" />
+        </div>
+        <div class="grid grid-cols-12 items-center gap-4 mb-4">
+          <label for="address" class="block text-h5 col-span-4 md:col-span-2">外送地址</label>
+          <input id="address" type="text" name="address" placeholder="地址" value="台北市大安區新生南路1段56號" class="block w-full rounded-md bg-neutral-400 text-white px-3 py-2 border border-white/40 col-span-8 md:col-span-3" />
+        </div>
+        <div class="grid grid-cols-12 items-center gap-4 mb-12">
+          <label for="deliveryTime" class="block text-h5 col-span-4 md:col-span-2">外送時間</label>
+          <input id="deliveryTime" type="text" name="deliveryTime" placeholder="時間" value="10 ~ 25 分鐘" class="block w-full rounded-md bg-neutral-400 text-white px-3 py-2 border border-white/40 col-span-8 md:col-span-3" />
+        </div>
+        <div class="mb-12">
+          <h2 class="text-white text-h2 mb-4">請選擇付款方式</h2>
+          <div class="flex items-center mb-4">
+            <input id="cash" type="radio" value="cash" name="radioForPay" class="w-6 h-6 accent-primary-1 mr-4" />
+            <label for="cash" class="text-h6 text-white">現金付款</label>
+          </div>
+          <div class="flex items-center">
+            <input checked id="creditCard" type="radio" value="creditCard" name="radioForPay" class="w-6 h-6 accent-primary-1 mr-4" />
+            <label for="creditCard" class="text-h6 text-white">信用卡付款</label>
           </div>
         </div>
-          <div class="col-span-full">
-          <label for="about" class="block text-h5 mb-2">備註</label>
-          <div>
-            <textarea id="about" name="about" rows="3" class="block w-full rounded-md bg-neutral-400 text-white px-3 py-1.5 text-base outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 "></textarea>
-          </div>
+        <div>
+          <h2 class="text-white text-h2 mb-4">訂單摘要</h2>
+          <p class="flex text-h6 text-white mb-4">餐點金額 <span class="ml-auto">$650</span></p>
+          <p class="flex text-h6 text-white mb-4">外送費 <span class="ml-auto">$40</span></p>
+          <p class="flex text-h6 text-white mb-4">優惠碼: OwlEat<span class="ml-auto">-$50</span></p>
+          <hr class="mb-4" />
+          <p class="flex text-h5 text-white mb-8">總計<span class="ml-auto">$640</span></p>
+        </div>
+        <div class="mb-8">
+          <label for="about" class="block text-h5 mb-4">備註</label>
+          <textarea id="about" name="about" rows="4" placeholder="請在此輸入您的特殊需求" class="block w-full rounded-md bg-neutral-400 text-white px-3 py-2 border border-white/40"></textarea>
+        </div>
+        <div class="flex justify-end">
+          <a href="paid.html" class="ml-auto inline-block text-white py-3 px-12 border border-white/40 rounded-[100px] bg-neutral-400">確認送出</a>
         </div>
       </section>
     </main>

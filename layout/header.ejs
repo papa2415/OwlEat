@@ -1,8 +1,17 @@
-<header class="flex py-6 px-30 border-b border-white/25">
-  <a href="index.html"> <img src="/assets/images/logo.svg" alt="logo" /></a>
-  <div class="flex items-center mx-auto gap-9"><%- include('./layout/switch'); -%> <%- include('./layout/search'); -%> <%- include('./layout/address'); -%></div>
-  <div class="flex items-center gap-4">
+<header>
+<div class="flex py-6 px-4 border-b border-white/25 justify-center items-center xl:gap-x-4 2xl:gap-x-21 gap-y-4">
+  <a href="index.html" class="min-w-[140px]"> <img src="/assets/images/logo.svg" alt="logo" /></a>
+  <div class="flex items-center  gap-9  hidden xl:flex basis-[1034px]"><%- include('./layout/switch'); -%> <%- include('./layout/search'); -%> <%- include('./layout/address'); -%></div>
+  <div class="flex items-center gap-4 shrink-0">
     <a href="cart.html"><img src="/assets/images/cart.svg" alt="cart" class="p-3" /></a>
-    <a href="#" class="text-white py-3 px-12 border bg-neutral-400 border-white/40 rounded-[100px]">登入</a>
+    <%- include('./layout/btn',{url:"#",title:"登入"}); -%> 
   </div>
+</div>
+  <div class="grid grid-cols-1 px-3 py-8 xl:hidden gap-4">
+    <div class=" bg-neutral-300 border border-white/25 block rounded-[100px] flex" data-seg-group="service">
+  <button type="button" class="w-full py-3 px-6 data-[on=true]:bg-primary-1 data-[on=true]:text-white rounded-[100px] hover:bg-primary-1/70 hover:shadow-[0_0_20px_rgba(236,109,39,0.6),0_0_40px_rgba(125,125,125,0.3)]" aria-pressed="true" data-on="true" data-seg-btn>外送</button>
+  <button type="button" class="w-full  py-3 px-6 data-[on=true]:bg-primary-1 data-[on=true]:text-white rounded-[100px] hover:bg-primary-1/70 hover:shadow-[0_0_20px_rgba(236,109,39,0.6),0_0_40px_rgba(125,125,125,0.3)]" aria-pressed="false" data-on="false" data-seg-btn>外帶</button>
+</div>
+
+    <%- include('./layout/search'); -%> <%- include('./layout/address'); -%></div>
 </header>
