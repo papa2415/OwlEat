@@ -12,6 +12,7 @@
     <%- include('./layout/header'); -%>
     <main class="mx-auto max-w-[1296px] px-3">
       <section class="py-15">
+        <%- include('./layout/step',{currentStep: 1}); -%>
         <h1 class="text-white text-h1 mb-4">夜肉場</h1>
         <div class="mb-8"><%- include('./layout/card-cart',{title:"烤梅花豬肉定食",specialPrice:"$300",originalPrice:"$340",url:"/assets/images/food/food-1.png"}); -%> <%- include('./layout/card-cart',{title:"烤梅花豬肉定食",specialPrice:"$300",originalPrice:"$340",url:"/assets/images/food/food-1.png"}); -%></div>
         <div class="mb-8 flex justify-between"><%- include('./layout/btn',{url:"#",title:"團購訂單"}); -%> <%- include('./layout/btn',{url:"#",title:"繼續加點"}); -%></div>

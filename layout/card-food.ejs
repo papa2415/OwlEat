@@ -1,6 +1,6 @@
 <a href="store.html" class="rounded-[8px] bg-primary-1 hover:shadow-[0_0_20px_rgba(236,109,39,0.6),0_0_40px_rgba(125,125,125,0.3)]">
-  <div class="rounded-[8px] max-w-[636px] bg-linear-to-b from-neutral-300 to-neutral-400 hover:from-neutral-300/30 hover:to-neutral-400/30 flex border border-white/10 ">
-    <div class="p-4 w-100">
+  <div class="h-full w-full rounded-[8px] bg-linear-to-b from-neutral-300 to-neutral-400 hover:from-neutral-300/30 hover:to-neutral-400/30 flex border border-white/10 ">
+    <div class="p-4 w-1/2">
       <h2 class="mb-4 flex justify-between text-h4 text-white"><%= title %></h2>
       <p class="mb-2"><span class="mr-2 text-h5 text-white"><%= specialPrice %></span>
           <% if (locals.originalPrice) { %>
@@ -11,11 +11,11 @@
       <p><%= locals.description %></p>
               <% } %>
     </div>
-    <div class="relative max-w-[318px] flex">
+    <div class="relative w-1/2">
        <% if (locals.url) { %>
-      <img src="<%= locals.url %>" alt="store" class="rounded-e-[8px]" />
+      <img src="<%= locals.url %>" alt="store" class="rounded-e-[8px] h-full w-full object-cover" />
       <% }else { %>
-      <div class="w-[576px] aspect-[576/498]"></div>
+      <div class="aspect-[576/498]"></div>
       <% } %>
       <img src="/assets/images/plus-circle-fill.svg" alt="addCart" class="absolute right-2 bottom-2" />
     </div>
