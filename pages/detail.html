@@ -16,43 +16,44 @@
         <form>
           <h2 class="text-white text-h2 mb-4">訂購資訊</h2>
           <div class="grid grid-cols-12 items-center gap-4 mb-4">
-            <label for="username" class="block text-h5 col-span-4 md:col-span-2">訂購人姓名</label>
-            <input id="username" type="text" name="username" placeholder="姓名" value="王曉芳" class="block w-full rounded-md bg-neutral-400 text-white px-3 py-2 border border-white/40 col-span-8 md:col-span-3" />
+            <p class="text-h5 col-span-4 md:col-span-2">訂購人姓名</p>
+            <p class="block w-full text-h5 text-white px-3 py-2 col-span-8 md:col-span-3">王曉芳</p>
           </div>
           <div class="grid grid-cols-12 items-center gap-4 mb-4">
-            <label for="phone" class="block text-h5 col-span-4 md:col-span-2">聯絡電話</label>
-            <input id="phone" type="text" name="phone" placeholder="電話" value="0912345678" class="block w-full rounded-md bg-neutral-400 text-white px-3 py-2 border border-white/40 col-span-8 md:col-span-3" />
+            <p class="text-h5 col-span-4 md:col-span-2">聯絡電話</p>
+            <p class="block w-full text-h5 text-white px-3 py-2 col-span-8 md:col-span-3">0912345678</p>
           </div>
           <div class="grid grid-cols-12 items-center gap-4 mb-4">
-            <label for="address" class="block text-h5 col-span-4 md:col-span-2">外送地址</label>
-            <input id="address" type="text" name="address" placeholder="地址" value="台北市大安區新生南路1段56號" class="block w-full rounded-md bg-neutral-400 text-white px-3 py-2 border border-white/40 col-span-8 md:col-span-3" />
+            <p class="text-h5 col-span-4 md:col-span-2">外送地址</p>
+            <p class="block w-full text-h5 text-white px-3 py-2 col-span-8 md:col-span-3">台北市大安區新生南路1段56號</p>
           </div>
           <div class="grid grid-cols-12 items-center gap-4 mb-12">
-            <label for="deliveryTime" class="block text-h5 col-span-4 md:col-span-2">外送時間</label>
-            <input id="deliveryTime" type="text" name="deliveryTime" placeholder="時間" value="10 ~ 25 分鐘" class="block w-full rounded-md bg-neutral-400 text-white px-3 py-2 border border-white/40 col-span-8 md:col-span-3" />
+            <p class="text-h5 col-span-4 md:col-span-2">外送時間</p>
+            <p class="block w-full text-h5 text-white px-3 py-2 col-span-8 md:col-span-3">10 ~ 25 分鐘</p>
           </div>
           <div class="mb-12">
-            <h2 class="text-white text-h2 mb-4">請選擇付款方式</h2>
-            <div class="flex items-center mb-4">
-              <input id="cash" type="radio" value="cash" name="radioForPay" class="w-6 h-6 accent-primary-1 mr-4" checked />
-              <label for="cash" class="text-h6 text-white">現金付款</label>
-            </div>
+            <h2 class="text-white text-h2 mb-4">付款方式</h2>
             <div class="flex items-center">
-              <input id="creditCard" type="radio" value="creditCard" name="radioForPay" class="w-6 h-6 accent-primary-1 mr-4" />
-              <label for="creditCard" class="text-h6 text-white">信用卡付款</label>
+              <p class="block w-full text-h5 text-white px-3 py-2 col-span-8 md:col-span-3">現金付款</p>
             </div>
           </div>
-          <div>
-            <h2 class="text-white text-h2 mb-4">訂單摘要</h2>
-            <p class="flex text-h6 text-white mb-4">餐點金額 <span class="ml-auto">$650</span></p>
-            <p class="flex text-h6 text-white mb-4">外送費 <span class="ml-auto">$40</span></p>
-            <p class="flex text-h6 text-white mb-4">優惠碼: OwlEat<span class="ml-auto">-$50</span></p>
-            <hr class="mb-4" />
-            <p class="flex text-h5 text-white mb-8">總計<span class="ml-auto">$640</span></p>
+          <div class="grid grid-cols-12">
+            <h2 class="col-span-12 text-white text-h2 mb-4">訂單摘要</h2>
+            <p class="col-span-11 text-h5 text-white mb-4">餐點明細</p>
+            <p class="col-span-1 col-start-12 text-h5 justify-self-end">$680</p>
+            <p class="col-span-9 col-start-2 text-h6 text-white mb-4">烤梅花豬肉定食 *1 $300</p>
+            <p class="col-span-9 col-start-2 text-h6 text-white mb-4">烤牛五花定食 *1 $380</p>
+            <p class="col-span-11 text-h5 text-white mb-4">外送費</p>
+            <p class="col-span-1 text-h5 col-start-12 justify-self-end">$40</p>
+            <p class="col-span-11 text-h5 text-white mb-4">優惠碼: OwlEat</p>
+            <p class="col-span-1 text-h5 col-start-12 justify-self-end">-$50</p>
+            <hr class="col-span-12 mb-4" />
+            <p class="col-span-11 text-h5 text-white mb-4">總計</p>
+            <p class="col-span-1 text-h5 col-start-12 justify-self-end">$670</p>
           </div>
-          <div class="mb-8">
-            <label for="about" class="block text-h5 mb-4">備註</label>
-            <textarea id="about" name="about" rows="4" placeholder="請在此輸入您的特殊需求" class="block w-full rounded-md bg-neutral-400 text-white px-3 py-2 border border-white/40"></textarea>
+          <div class="grid grid-cols-12 items-center gap-4 mb-12">
+            <p class="text-white text-h5 col-span-4 md:col-span-2">備註</p>
+            <p class="text-white text-h5 px-3 py-2 col-span-8 md:col-span-3">調味清淡</p>
           </div>
         </form>
       </section>

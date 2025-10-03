@@ -42,17 +42,23 @@
               <label for="creditCard" class="text-h6 text-white">信用卡付款</label>
             </div>
           </div>
-          <div>
-            <h2 class="text-white text-h2 mb-4">訂單摘要</h2>
-            <p class="flex text-h6 text-white mb-4">餐點金額 <span class="ml-auto">$650</span></p>
-            <p class="flex text-h6 text-white mb-4">外送費 <span class="ml-auto">$40</span></p>
-            <p class="flex text-h6 text-white mb-4">優惠碼: OwlEat<span class="ml-auto">-$50</span></p>
-            <hr class="mb-4" />
-            <p class="flex text-h5 text-white mb-8">總計<span class="ml-auto">$640</span></p>
+          <div class="grid grid-cols-12">
+            <h2 class="col-span-12 text-white text-h2 mb-4">訂單摘要</h2>
+            <p class="col-span-11 text-h5 text-white mb-4">餐點明細</p>
+            <p class="col-span-1 col-start-12 text-h5 justify-self-end">$680</p>
+            <p class="col-span-9 col-start-2 text-h6 text-white mb-4">烤梅花豬肉定食 *1 $300</p>
+            <p class="col-span-9 col-start-2 text-h6 text-white mb-4">烤牛五花定食 *1 $380</p>
+            <p class="col-span-11 text-h5 text-white mb-4">外送費</p>
+            <p class="col-span-1 text-h5 col-start-12 justify-self-end">$40</p>
+            <p class="col-span-11 text-h5 text-white mb-4">優惠碼: OwlEat</p>
+            <p class="col-span-1 text-h5 col-start-12 justify-self-end">-$50</p>
+            <hr class="col-span-12 mb-4" />
+            <p class="col-span-11 text-h5 text-white mb-4">總計</p>
+            <p class="col-span-1 text-h5 col-start-12 justify-self-end">$670</p>
           </div>
           <div class="mb-8">
             <label for="about" class="block text-h5 mb-4">備註</label>
-            <textarea id="about" name="about" rows="4" placeholder="請在此輸入您的特殊需求" class="block w-full rounded-md bg-neutral-400 text-white px-3 py-2 border border-white/40"></textarea>
+            <textarea id="about" name="about" rows="4" placeholder="請在此輸入您的特殊需求" class="block w-full rounded-md bg-neutral-400 text-white px-3 py-2 border border-white/40">調味請清淡一些</textarea>
           </div>
           <div class="flex justify-end">
             <a href="detail.html" class="ml-auto inline-block text-white py-3 px-12 border border-white/40 rounded-[100px] bg-neutral-400">確認送出</a>
