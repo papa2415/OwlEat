@@ -7,6 +7,7 @@
     <%- include('./layout/btn',{url:"#",title:"登入"}); -%> 
   </div>
 </div>
+       <% if (locals.display) { %>
   <div class="grid grid-cols-1 px-3 py-8 xl:hidden gap-4">
     <div class=" bg-neutral-300 border border-white/25 block rounded-[100px] flex" data-seg-group="service">
   <button type="button" class="w-full py-3 px-6 data-[on=true]:bg-primary-1 data-[on=true]:text-white rounded-[100px] hover:bg-primary-1/70 hover:shadow-[0_0_20px_rgba(236,109,39,0.6),0_0_40px_rgba(125,125,125,0.3)]" aria-pressed="true" data-on="true" data-seg-btn>外送</button>
@@ -14,4 +15,6 @@
 </div>
 
     <%- include('./layout/search'); -%> <%- include('./layout/address'); -%></div>
+
+          <% } %>
 </header>
