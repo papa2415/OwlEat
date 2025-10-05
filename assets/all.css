@@ -77,13 +77,16 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(720deg);
-  } /* 兩圈，看起來比較明顯 */
+    transform: rotate(680deg);
+  }
 }
 
-/* 當 modal 開啟（.show）時，讓圖轉 2 秒 */
-.modal.show .spin-target {
-  animation: spin2s 2s ease-in-out;
+.spin-target {
+  transform-origin: center center;
+}
+
+.spin-active {
+  animation: spin2s 2s ease-in-out forwards;
 }
 
 @utility no-scrollbar {
